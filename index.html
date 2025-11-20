@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tik Tok Showdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Mini Game</p>
+          <h1>Tik Tok (a.k.a Tic-Tac-Toe)</h1>
+          <p class="subhead">
+            Challenge a friend, keep score, and get ready to deploy it on GitHub.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button id="newMatchBtn" class="primary">Start fresh</button>
+          <button id="resetScoreBtn" class="ghost">Reset score</button>
+        </div>
+      </header>
+
+      <section class="scoreboard">
+        <div class="scoreblock">
+          <p>Player X</p>
+          <h2 id="scoreX">0</h2>
+        </div>
+        <div class="scoreblock">
+          <p>Ties</p>
+          <h2 id="scoreTie">0</h2>
+        </div>
+        <div class="scoreblock">
+          <p>Player O</p>
+          <h2 id="scoreO">0</h2>
+        </div>
+      </section>
+
+      <section class="board" role="grid" aria-label="Tik Tok board">
+        <!-- cells injected by script -->
+      </section>
+
+      <section class="statusbar">
+        <p id="statusLabel">Player X, it’s your turn.</p>
+        <button id="undoBtn" class="ghost small" disabled>Undo move</button>
+      </section>
+    </main>
+
+    <template id="cellTemplate">
+      <button class="cell" role="gridcell" aria-label="Empty cell"></button>
+    </template>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
