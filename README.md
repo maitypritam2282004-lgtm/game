@@ -5,6 +5,8 @@ A polished, browser-based take on the classic Tic-Tac-Toe (a.k.a “Tik Tok”) 
 ## Preview
 
 Open `index.html` in any modern browser. No build tools or dependencies required.
+  
+👉 Live demo: https://maitypritam2282004-lgtm.github.io/game/
 
 ## Local Setup
 
